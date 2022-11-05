@@ -1,0 +1,16 @@
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+
+    color: var(--title-text-color);
+
+
+&--colored {
+    color: var(--accent-color);
+}
+}
+.logo.logo-footer--color {
+    color: #FFFFFF;
+}

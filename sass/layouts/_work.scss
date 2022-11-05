@@ -1,0 +1,50 @@
+.work {
+    padding-top: 0;
+
+
+&-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+&-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+&-card {
+    position: relative;
+
+
+&__section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+&__name {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+}
+@media screen and (max-width: 1200px)
+    {display: none;}
+
+}

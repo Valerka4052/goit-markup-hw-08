@@ -1,0 +1,41 @@
+.modal {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    padding: 40px;
+
+    width: 100%;
+    max-width: 450px;
+    max-height: 609px;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    transform: scale(1) translate(-50%, -50%) perspective(600px) rotateX(0);
+    transition: transform var(--animation), rotateX var(--animation) 250ms;
+
+    z-index: 1000;
+
+    @media screen and (min-width: 1200px) {
+            max-width: 528px;
+            max-height: 581px;
+        }
+
+&__title {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+
+    color: var(--title-text-color);
+}
+}

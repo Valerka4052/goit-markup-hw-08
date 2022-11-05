@@ -1,0 +1,24 @@
+.navigation__buttons {
+    display: flex;
+    flex-wrap: wrap;
+        margin-bottom: 40px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+}
+
+.navigation__item {
+margin-right: 8px;
+margin-bottom: 15px;
+
+&:last-child {
+    margin-right: 0;
+}
+}

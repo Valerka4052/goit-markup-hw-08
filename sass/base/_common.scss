@@ -1,0 +1,10 @@
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+
+    &.no-scroll {
+     overflow: hidden;
+        }
+}

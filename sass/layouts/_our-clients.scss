@@ -1,0 +1,16 @@
+.section.our-clients {
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clients-title {
+    
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--title-text-color);
+    
+@media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+  
+}

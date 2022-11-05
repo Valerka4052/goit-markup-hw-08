@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--title-text-color);
+}
+h2{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.17;
+        @media screen and (min-width: 1200px) {
+               
+                    font-size: 36px;
+                    
+            }
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+
+&:hover,
+&:focus {
+    color: var(--accent-color)
+}
+}

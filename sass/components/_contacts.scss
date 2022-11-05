@@ -1,0 +1,44 @@
+.contacts {
+    display: flex;
+
+
+&__item {
+    margin-right: 30px;
+
+
+&:last-child {
+    margin-right: 0;
+
+}
+}
+
+
+&__link.link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+
+    transition: color var(--animation);
+
+
+&.link:hover {
+    color: var(--accent-color)
+}
+}
+
+
+
+&__icon {
+    display: flex;
+
+    padding: 0;
+    margin-right: 10px;
+    fill: currentColor;
+}
+}

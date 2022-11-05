@@ -1,0 +1,19 @@
+.section-hero {
+      background-color: #2F303A;
+    background-image: linear-gradient(to right, hsl(235deg 11% 24% / 40%), hsl(235deg 11% 24% / 40%)), url(../images/team-at-work.jpg);
+background-size: cover;
+  background-position: center;
+    max-width: 1600px;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      }
+}
