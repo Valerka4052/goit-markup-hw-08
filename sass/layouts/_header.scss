@@ -1,9 +1,14 @@
 .page-header {
-    // display:none;
+  position: relative;
 
     display: flex;
-    justify-content: space-between;
+  
+    
     align-items: center;
+@media screen and (max-width: 767px) {
+        height: 60px;
+    }
+   
 }
 .logo {
     font-family: 'Raleway';
@@ -22,12 +27,10 @@
     border-bottom: 1px solid #EEEEEE;
 }
 .logo-container {
-    margin-right: 93px;
+    
+    margin-right: 90px;
 }
-.nav-container {
-    display: flex;
-    align-items: center;
-}
-.header{
-    display: none;
-}
+
+// .header{
+//     display: none;
+// }
