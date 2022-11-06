@@ -30,7 +30,30 @@
     
     margin-right: 90px;
 }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
-// .header{
-//     display: none;
-// }
+    display: none;
+   
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    &.is-open {
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            min-height: 796px;
+            background-color: white;
+            padding: 48px 40px;
+        }
+    }
+}
