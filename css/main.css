@@ -32,7 +32,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1090,10 +1090,11 @@ body.no-scroll {
 
 .section-hero {
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/team-at-work.jpg);
-  background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/team-at-work.jpg);
   background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/team-at-work.jpg);
+  background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/team-at-work.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -1101,10 +1102,42 @@ body.no-scroll {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (max-width: 768px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet_result.jpg);
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-mobile@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-mobile@2x_result.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet_result.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-tablet@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-tablet@2x_result.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-desktop_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-desktop_result.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsla(235deg, 11%, 24%, 0.4)), to(hsla(235deg, 11%, 24%, 0.4))), url(../images/hero/header-desktop@2x_result.jpg);
+    background-image: linear-gradient(to right, hsla(235deg, 11%, 24%, 0.4), hsla(235deg, 11%, 24%, 0.4)), url(../images/hero/header-desktop@2x_result.jpg);
   }
 }
 

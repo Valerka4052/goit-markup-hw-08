@@ -31,9 +31,8 @@
 
 <button class="menu-button is-open" type="button" aria-expanded="false" aria-controls="nav-container" data-menu-button ><svg class="" width="40" height="40" aria-label="swtcher">
                 <use class="icon-cross" href="./images/icons.svg#icon-menu_40px"></use>
-                <use class="icon-menu" href="./images/icons.svg#icon-close_40px"></use></svg
-                </svg
-              ></button>
+                <use class="icon-menu" href="./images/icons.svg#icon-close_40px"></use>
+                </svg></button>
 
 
 <div class="nav-container" id="nav-container" data-menu>
@@ -151,35 +150,53 @@
           <ul class="work-list list">
             <li>
               <div class="work-card">
-                <img
+                <picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/work/work-desktop01_result.jpg 1x,
+                ./images/work/work-desktop01@2x_result.jpg 2x">
+               
+                  <img
                   src="./images/Coding.jpg"
                   alt="Розробка коду"
                   width="370"
-                />
+                /></picture>
                 <div class="work-card__section">
                   <p class="work-card__name">Десктопні додатки</p>
                 </div>
               </div>
             </li>
             <li>
-              <div class="work-card">
-                <img
+              <div class="work-card"><picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/work/work-desktop02_result.jpg 1x,
+                ./images/work/work-desktop02@2x_result.jpg 2x">
+               
+                  <img
                   src="./images/Adaptatin_for_mobile_devices.jpg"
                   alt="адаптація на мобільний пристрій"
                   width="370"
-                />
+                /></picture>
+                
                 <div class="work-card__section">
                   <p class="work-card__name">Мобільні додатки</p>
                 </div>
               </div>
             </li>
             <li>
-              <div class="work-card">
-                <img
+              <div class="work-card"><picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/work/work-desktop03_result.jpg 1x,
+                ./images/work/work-desktop03@2x_result.jpg 2x">
+               
+                  <img
                   src="./images/Test_on_tablet_pc.jpg"
                   alt="тестування на планшеті"
                   width="370"
-                />
+                /></picture>
+                
                 <div class="work-card__section">
                   <p class="work-card__name">Дизайнерські рішення</p>
                 </div>
@@ -194,12 +211,27 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team-card">
-              <img
+              <picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/team/team-desktop01_result.jpg 1x,
+                ./images/team/team-desktop01@2x_result.jpg 2x" type="image/jpg"/>
+                 <source
+                 media="(min-width: 768px)"
+                srcset="./images/team/team-tablet01_result.jpg 1x,
+                ./images/team/team-tablet01@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(max-width: 767px)"
+                srcset="./images/team/team-mobile01_result.jpg 1x,
+                ./images/team/team-mobile01@2x_result.jpg 2x" type="image/jpg"/>
+                             
+                  <img
                 class="our-team-card__image"
                 src="./images/Igor_Demyanenko.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-              />
+                width="450"
+              /></picture>
+              
               <h3 class="our-team-card__name">Ігор Дем'яненко</h3>
               <p class="our-team-card__proffession">Product Designer</p>
               <ul class="our-team-social-icons list">
@@ -248,12 +280,27 @@
               </ul>
             </li>
             <li class="our-team-card">
-              <img
+              <picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/team/team-desktop02_result.jpg 1x,
+                ./images/team/team-desktop02@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(min-width: 768px)"
+                srcset="./images/team/team-tablet02_result.jpg 1x,
+                ./images/team/team-tablet02@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(max-width: 767px)"
+                srcset="./images/team/team-mobile02_result.jpg 1x,
+                ./images/team/team-mobile02@2x_result.jpg 2x" type="image/jpg"/>
+                               
+                  <img
                 class="our-team-card__image"
                 src="./images/Olha_Repina.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
-              />
+                width="450"
+              /></picture>
+              
               <h3 class="our-team-card__name">Ольга Рєпіна</h3>
               <p class="our-team-card__proffession">Frontend Developer</p>
               <ul class="our-team-social-icons list">
@@ -302,12 +349,27 @@
               </ul>
             </li>
             <li class="our-team-card">
-              <img
+              <picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/team/team-desktop03_result.jpg 1x,
+                ./images/team/team-desktop03@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(min-width: 768px)"
+                srcset="./images/team/team-tablet03_result.jpg 1x,
+                ./images/team/team-tablet03@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(max-width: 767px)"
+                srcset="./images/team/team-mobile03_result.jpg 1x,
+                ./images/team/team-mobile03@2x_result.jpg 2x" type="image/jpg"/>
+                               
+                  <img
                 class="our-team-card__image"
                 src="./images/Mykola_Tarasov.jpg"
                 alt="Микола Тарасов"
-                width="270"
-              />
+                width="450"
+              /></picture>
+              
               <h3 class="our-team-card__name">Микола Тарасов</h3>
               <p class="our-team-card__proffession">Marketing</p>
               <ul class="our-team-social-icons list">
@@ -356,12 +418,27 @@
               </ul>
             </li>
             <li class="our-team-card">
-              <img
+              <picture>
+                <source
+                 media="(min-width: 1200px)"
+                srcset="./images/team/team-desktop04_result.jpg 1x,
+                ./images/team/team-desktop04@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(min-width: 768px)"
+                srcset="./images/team/team-tablet04_result.jpg 1x,
+                ./images/team/team-tablet04@2x_result.jpg 2x" type="image/jpg"/>
+                <source
+                 media="(max-width: 767px)"
+                srcset="./images/team/team-mobile04_result.jpg 1x,
+                ./images/team/team-mobile04@2x_result.jpg 2x" type="image/jpg"/>
+                               
+                  <img
                 class="our-team-card__image"
                 src="./images/Mykhajlo_Yermakov.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
-              />
+                width="450"
+              /></picture>
+              
               <h3 class="our-team-card__name">Михайло Єрмаков</h3>
               <p class="our-team-card__proffession">UI Designer</p>
               <ul class="our-team-social-icons list">
