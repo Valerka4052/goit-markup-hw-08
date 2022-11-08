@@ -282,7 +282,7 @@ body.no-scroll {
 
 .menu-button {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -900,6 +900,7 @@ body.no-scroll {
 }
 .project-card__item {
   width: 450px;
+  height: auto;
   margin: 15px;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
@@ -936,8 +937,8 @@ body.no-scroll {
   vertical-align: Top;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--animation);
   transition: -webkit-transform var(--animation);
   transition: transform var(--animation);
@@ -955,6 +956,16 @@ body.no-scroll {
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .project-card__description-box.first-item {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__description-box.first-item {
+    padding-bottom: 24px;
+  }
 }
 .project-card__text {
   margin-top: 0;
@@ -1200,7 +1211,7 @@ body.no-scroll {
           align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: white;
 }
 
 .work {
