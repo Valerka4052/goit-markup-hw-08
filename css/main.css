@@ -294,7 +294,7 @@ body.no-scroll {
   color: #212121;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
-  z-index: 1;
+  z-index: 6;
 }
 .menu-button:hover {
   color: var(--accent-color);
