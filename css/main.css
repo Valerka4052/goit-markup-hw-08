@@ -930,6 +930,18 @@ body.no-scroll {
 .project-card__product-thumb {
   position: relative;
   overflow: hidden;
+  width: 450px;
+  height: 294;
+}
+@media screen and (min-width: 768px) {
+  .project-card__product-thumb {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__product-thumb {
+    width: 370px;
+  }
 }
 .project-card__information {
   position: absolute;
