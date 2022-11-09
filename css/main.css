@@ -899,8 +899,14 @@ body.no-scroll {
   margin: -15px;
 }
 .project-card__item {
-  width: 450px;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 450px;
   margin: 15px;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
@@ -931,7 +937,10 @@ body.no-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-size: 18px;
   line-height: 1.55;
   vertical-align: Top;
@@ -944,11 +953,25 @@ body.no-scroll {
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
+@media screen and (min-width: 768px) {
+  .project-card__information {
+    padding-top: 49px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__information {
+    padding: 63px 24px;
+  }
+}
 .project-card__item:hover .project-card__information {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .project-card__description-box {
+  max-height: 146px;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
